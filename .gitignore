@@ -5,3 +5,5 @@
 *.o
 *.log
 ./main
+./go-vpp
+./vpp

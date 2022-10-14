@@ -1,6 +1,6 @@
 # VPP _Version Plus Plus_
 
-[![Build & Test VPP](https://github.com/andreimerlescu/go-vpp/actions/workflows/go.yaml/badge.svg)](https://github.com/andreimerlescu/go-vpp/actions/workflows/go.yaml)
+[![Build & Test VPP](https://github.com/andreimerlescu/vpp/actions/workflows/go.yaml/badge.svg)](https://github.com/andreimerlescu/go-vpp/actions/workflows/go.yaml)
 
 ## About
 
@@ -14,7 +14,7 @@ release is a major release, then run `vpp CURRENT_VERSION major`.
 This package is intended to be installed on your system and should be accessible via your path.
 
 ```bash
-go install github.com/andreimerlescu/go-vpp@latest
+go install github.com/andreimerlescu/vpp@latest
 ```
 
 ## Usage
