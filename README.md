@@ -1,6 +1,6 @@
-# VPP
+# VPP _Version Plus Plus_
 
-Version Plus Plus [![Build & Test VPP](https://github.com/andreimerlescu/go-vpp/actions/workflows/go.yaml/badge.svg)](https://github.com/andreimerlescu/go-vpp/actions/workflows/go.yaml)
+[![Build & Test VPP](https://github.com/andreimerlescu/go-vpp/actions/workflows/go.yaml/badge.svg)](https://github.com/andreimerlescu/go-vpp/actions/workflows/go.yaml)
 
 ## About
 
