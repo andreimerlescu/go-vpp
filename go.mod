@@ -1,5 +1,3 @@
-module github.com/andreimerlescu/go-vpp
-
-replace github.com/andreimerlescu/go-vpp => ./.
+module github.com/andreimerlescu/vpp
 
 go 1.19
