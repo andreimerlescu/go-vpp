@@ -36,8 +36,9 @@ func main() {
 
 	verParts := strings.Split(verStr, ".")
 	if len(verParts) == 1 {
+		vp0 := strings.Replace(verParts[0], "v", "", -1)
 		// version 1
-		major, majErr := strconv.Atoi(verParts[0])
+		major, majErr := strconv.Atoi(vp0)
 		if majErr != nil {
 			fmt.Println(fmt.Errorf("failed to convert verStr[0] to int: %v", majErr))
 			return
@@ -45,29 +46,34 @@ func main() {
 		version = Version{Major: major}
 	} else if len(verParts) == 2 {
 		// version 1.1
-		major, majErr := strconv.Atoi(verParts[0])
+		vp0 := strings.Replace(verParts[0], "v", "", -1)
+		major, majErr := strconv.Atoi(vp0)
 		if majErr != nil {
 			fmt.Println(fmt.Errorf("failed to convert verParts[0] to int: %v", majErr))
 			return
 		}
-		minor, minErr := strconv.Atoi(verParts[1])
+		vp1 := strings.Replace(verParts[1], "v", "", -1)
+		minor, minErr := strconv.Atoi(vp1)
 		if minErr != nil {
 			fmt.Println(fmt.Errorf("failed to convert verParts[1] to int: %v", minErr))
 			return
 		}
 		version = Version{Major: major, Minor: minor}
 	} else if len(verParts) == 3 {
-		major, majErr := strconv.Atoi(verParts[0])
+		vp0 := strings.Replace(verParts[0], "v", "", -1)
+		major, majErr := strconv.Atoi(vp0)
 		if majErr != nil {
 			fmt.Println(fmt.Errorf("failed to convert verParts[0] to int: %v", majErr))
 			return
 		}
-		minor, majErr := strconv.Atoi(verParts[1])
+		vp1 := strings.Replace(verParts[0], "v", "", -1)
+		minor, majErr := strconv.Atoi(vp1)
 		if majErr != nil {
 			fmt.Println(fmt.Errorf("failed to convert verParts[1] to int: %v", majErr))
 			return
 		}
-		patch, patErr := strconv.Atoi(verParts[2])
+		vp2 := strings.Replace(verParts[2], "v", "", -1)
+		patch, patErr := strconv.Atoi(vp2)
 		if patErr != nil {
 			fmt.Println(fmt.Errorf("failed to convert verParts[2] to int: %v", patErr))
 			return
